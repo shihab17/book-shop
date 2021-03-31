@@ -12,14 +12,14 @@ import EditIcon from '@material-ui/icons/Edit';
 const ManageBooks = () => {
     const [books, setBooks] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/books')
+        fetch('https://pure-springs-85119.herokuapp.com/books')
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])
 
     const handleDeleteBook = (bookId) => {
         console.log('clocked', bookId)
-        fetch(`http://localhost:5055/deleteBook/${bookId}`, {
+        fetch(`https://pure-springs-85119.herokuapp.com/deleteBook/${bookId}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

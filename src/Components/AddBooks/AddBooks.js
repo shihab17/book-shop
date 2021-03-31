@@ -13,7 +13,7 @@ const AddBooks = () => {
             bookPrice: data.bookPrice,
             imageURL: imageURL
         };
-        const url = `http://localhost:5055/addBook`;
+        const url = `https://pure-springs-85119.herokuapp.com/addBook`;
         console.log(bookData)
         fetch(url, {
             method: 'POST',

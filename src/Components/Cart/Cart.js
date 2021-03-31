@@ -5,7 +5,7 @@ const Cart = () => {
     const { bookId } = useParams();
     const [book, setBook] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5055/book/${bookId}`)
+        fetch(`https://pure-springs-85119.herokuapp.com/book/${bookId}`)
             .then(res => res.json())
             .then(data => setBook(data[0]))
     }, [bookId])

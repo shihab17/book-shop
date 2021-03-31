@@ -4,7 +4,7 @@ import Book from '../Book/Book';
 const Home = () => {
     const [books, setBooks] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/books')
+        fetch('https://pure-springs-85119.herokuapp.com/books')
         .then(res => res.json())
         .then(data => setBooks(data))
     }, [])
