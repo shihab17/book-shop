@@ -7,9 +7,12 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Admin from './Components/Admin/Admin';
+import Cart from './Components/Cart/Cart';
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Router>
         <div>
           <nav>
@@ -39,13 +42,16 @@ function App() {
 
             </Route>
             <Route path="/admin">
-
+              <Admin></Admin>
             </Route>
             <Route path="/deals">
 
             </Route>
             <Route path="/login">
 
+            </Route>
+            <Route path="/cart/:bookId">
+              <Cart></Cart>
             </Route>
 
             <Route path="*">
