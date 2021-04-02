@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 const AddBooks = () => {
     const { handleSubmit, register } = useForm();
     const [imageURL, setImageURL] = useState(null);
-
+    const [loading, setLoading] = useState(false)
     const onSubmit = data => {
         const bookData = {
             bookName: data.bookName,
@@ -22,16 +22,24 @@ const AddBooks = () => {
             },
             body: JSON.stringify(bookData)
         })
-            .then(res => console.log('server response', res))
+            .then(res => {
+                document.getElementById('bookName').value = '';
+                document.getElementById('authorName').value = '';
+                document.getElementById('bookPrice').value = '';
+                document.getElementById('bookCoverPhoto').value = '';
+                setImageURL(null)
+                console.log('server response', res)
+            })
     };
     const handleImageUpload = event => {
         console.log(event.target.files[0])
+        setLoading(true)
         const imageData = new FormData();
         imageData.set('key', '9c8dcdb84d4e32f5d28caede55bbc3e2')
         imageData.append('image', event.target.files[0])
         axios.post('https://api.imgbb.com/1/upload', imageData)
             .then(function (response) {
-                console.log(response);
+                setLoading(false)
                 setImageURL(response.data.data.display_url)
             })
             .catch(function (error) {
@@ -40,6 +48,11 @@ const AddBooks = () => {
     }
     return (
         <div>
+            {
+                loading ? <div className="text-center ml-auto mr-auto text-info" >
+                    <p>Image Uploading....</p>
+                </div> : ''
+            }
             <form action="" onSubmit={handleSubmit(onSubmit)}>
                 <div className="row g-3 m-2">
                     <div className="col-md-6">
@@ -65,6 +78,7 @@ const AddBooks = () => {
                     <input className="btn btn-info m-3" type="submit" value="Submit" />
                 </div>
             </form>
+
         </div>
     );
 };
