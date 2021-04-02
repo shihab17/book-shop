@@ -8,6 +8,7 @@ import {
 import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/js/src/collapse.js";
 import Admin from './Components/Admin/Admin';
 import Cart from './Components/Cart/Cart';
 import Login from './Components/Login/Login';
