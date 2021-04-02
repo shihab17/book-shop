@@ -41,7 +41,7 @@ const AddBooks = () => {
     return (
         <div>
             <form action="" onSubmit={handleSubmit(onSubmit)}>
-                <div className="row g-3">
+                <div className="row g-3 m-2">
                     <div className="col-md-6">
                         <label htmlFor="bookName" className="form-label">Book Name</label>
                         <input type="text" className="form-control" name="bookName" id="bookName" placeholder="Enter Book Name" ref={register} />
@@ -51,7 +51,7 @@ const AddBooks = () => {
                         <input type="text" className="form-control" name="authorName" id="authorName" placeholder="Enter Author Name" ref={register} />
                     </div>
                 </div>
-                <div className="row g-3">
+                <div className="row g-3 m-2">
                     <div className="col-md-6">
                         <label htmlFor="bookPrice" className="form-label">Add Price</label>
                         <input type="text" className="form-control" name="bookPrice" id="bookPrice" placeholder="Enter Price" ref={register} />
@@ -61,8 +61,8 @@ const AddBooks = () => {
                         <input type="file" className="form-control" name="bookCoverPhoto" id="bookCoverPhoto" onChange={handleImageUpload} />
                     </div>
                 </div>
-                <div className="row">
-                    <input type="submit" value="Submit" />
+                <div className="row g-3 m-2">
+                    <input className="btn btn-info m-3" type="submit" value="Submit" />
                 </div>
             </form>
         </div>
