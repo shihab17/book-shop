@@ -17,12 +17,12 @@ const AddBooks = () => {
         console.log(bookData)
         fetch(url, {
             method: 'POST',
-            headers:{
+            headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(bookData)
         })
-        .then(res => console.log('server response', res))
+            .then(res => console.log('server response', res))
     };
     const handleImageUpload = event => {
         console.log(event.target.files[0])

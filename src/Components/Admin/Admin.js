@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import AddBooks from '../AddBooks/AddBooks';
 import ManageBooks from '../ManageBooks/ManageBooks';
-
+import AddIcon from '@material-ui/icons/Add';
 
 
 export default function Admin() {
@@ -73,7 +73,7 @@ export default function Admin() {
         className={classes.tabs}
       >
         <Tab label="Manage books" {...a11yProps(0)} />
-        <Tab label="Add Books" {...a11yProps(1)} />
+        <Tab  label="Add Books" {...a11yProps(1)} />
         <Tab label="Edit Book" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
