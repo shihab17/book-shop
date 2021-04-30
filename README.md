@@ -2,14 +2,22 @@
 
 # Live Site: https://book-shop-7e46d.web.app/
 
-Admin can mange books, add book, delete book
+# Features 
 
-# User 
+ -> Admin Dashboard 
+ -> Login Authentication with google sign in
+ -> Admin can performs new book, remove book from the list 
+ -> User can order book
+ -> User can see All order list 
 
-User Buy his/her favorite book, can add to cart, see Order list 
-
-# Login With Google 
-
-# Live Server Link 
-
-# 
+# Technology used: 
+  
+  -> React Js
+  -> JavaScript
+  -> HTML
+  -> CSS 
+  -> React Router DOM
+  -> Bootstrap 
+  -> Material UI
+  -> Fontawesome
+  -> Firebase
