@@ -4,11 +4,11 @@
 
 # Features 
 
- -> Admin Dashboard 
- -> Login Authentication with google sign in
- -> Admin can performs new book, remove book from the list 
- -> User can order book
- -> User can see All order list 
+ - Admin Dashboard 
+ - Login Authentication with google sign in
+ - Admin can performs new book, remove book from the list 
+ - User can order book
+ - User can see All order list 
 
 # Technology used: 
   
