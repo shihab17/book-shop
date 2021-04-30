@@ -1,6 +1,6 @@
 # Online Book Store
 
-# Admin
+# Live Site: Adminhttps://book-shop-7e46d.web.app/
 
 Admin can mange books, add book, delete book
 
@@ -12,4 +12,4 @@ User Buy his/her favorite book, can add to cart, see Order list
 
 # Live Server Link 
 
-# https://book-shop-7e46d.web.app/
+# 
