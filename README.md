@@ -1,6 +1,6 @@
 # Online Book Store
 
-# Live Site: Adminhttps://book-shop-7e46d.web.app/
+# Live Site: https://book-shop-7e46d.web.app/
 
 Admin can mange books, add book, delete book
 
