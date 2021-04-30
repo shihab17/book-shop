@@ -10,14 +10,14 @@
  - User can order book
  - User can see All order list 
 
-# Technology used: 
+# Technology Used: 
   
-  -> React Js
-  -> JavaScript
-  -> HTML
-  -> CSS 
-  -> React Router DOM
-  -> Bootstrap 
-  -> Material UI
-  -> Fontawesome
-  -> Firebase
+  - React Js
+  - JavaScript
+  - HTML
+  - CSS 
+  - React Router DOM
+  - Bootstrap 
+  - Material UI
+  - Fontawesome
+  - Firebase
